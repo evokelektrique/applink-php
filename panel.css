@@ -1,0 +1,304 @@
+@charset "UTF-8";
+
+/* Including Fonts */
+@font-face {
+	font-family: Vazir-FD;
+	src: url('src/fonts/Vazir-FD.eot');
+	src: url('src/fonts/Vazir-FD.eot?#iefix') format('embedded-opentype'),
+	url('./src/fonts/Vazir-FD.woff') format('woff'),
+	url('./src/fonts/Vazir-FD.ttf') format('truetype');
+	font-weight: normal;
+}
+@font-face {
+	font-family: IranSansDN;
+	src: url('src/fonts/IranSansDN.eot');
+	src: url('src/fonts/IranSansDN.eot?#iefix') format('embedded-opentype'),
+	url('./src/fonts/IranSansDN.woff') format('woff'),
+	url('./src/fonts/IranSansDN.ttf') format('truetype');
+	font-weight: normal;
+}
+@font-face {
+	font-family: Roboto;
+	src: url('./src/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+	font-weight: normal;
+}
+/* RESET */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;	
+}
+/* Body */
+html, body {
+	font: 14px/1.5em "Vazir-FD", "IranSansDN";
+	color: #444;
+	direction: rtl;
+	background: rgb(244,248,254);
+	/*overflow: hidden;*/
+}
+body,html { height: 100%; }
+button {
+	line-height: 16px !important;
+}
+a {
+	text-decoration: none;
+	color: #444;
+}
+a:hover {
+	text-decoration: none;
+	text-decoration: none;
+}
+a:hover,
+a:active {
+	color: #111;
+}
+img {
+	max-width: 100%;
+}
+ul,li { list-style: none; }
+/* Defaults */
+.transition-3s * {
+	-webkit-transition: all .3s ease;
+			transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+}
+
+/* Fonts Settings */
+.sans 		{ font-family: "IranSansDN" !important }
+.vazir 		{ font-family: "Vazir-FD" !important }
+.roboto 	{ font-family: "Roboto" !important }
+
+
+
+
+
+header {
+	z-index: 1;
+}
+
+
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067"; 
+}
+
+
+
+
+header {
+	height: auto;
+	position: absolute;
+	top:0;
+	right: 0;
+}
+.dashboard {
+  height: 100%;
+  margin-top: -60px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.menu .copyright {
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+	/*width: 100%;*/
+}
+#menu {
+	margin-top: 2rem;
+	padding-top: 60px;
+}
+#menu li {
+	display: block;
+}
+#menu li p {
+	margin: 0;
+}
+.menu-header-item {
+	padding: 13px 10px;
+	cursor: pointer;
+	border-right: 5px solid transparent;
+	transition: all .1s ease;
+	font-weight: bold;
+}
+.menu-header-item:hover,
+#menu li:hover .menu-header-item {
+	color: var(--primary);
+	border-color: var(--primary);
+}
+
+#menu li .submenu {
+    background: rgba(236, 240, 247, 0.34);
+    padding: 10px 2.5rem 10px 10px;
+}
+
+#menu li .submenu a {
+	border-right: 2px solid #eaeaea;
+	display: block;
+	padding: 8px 5px;
+	transition: all .1s ease;
+	font-size: 13px;
+	padding-right: 1.5rem;
+}
+
+#menu li .submenu a:hover {
+	color: var(--primary);
+	border-color: var(--cyan)
+}
+
+#content {
+	padding-top: 60px !important;
+}
+
+
+
+.dashboard-stats .dashboard-stat-box {
+background: rgb(255,75,141);
+background: linear-gradient(280deg, rgba(255,75,141,1) 0%, rgba(161,126,231,1) 100%);
+	position: relative;
+}
+.dashboard-stats .dashboard-stat-box.dark {
+	background: #343f62 !important;
+}
+.dashboard-stats .dashboard-stat-box.light:after {
+	content: "";
+	background-image: url('./src/images/dashboard-box-layers-particles.png') !important;
+	/*background-size: contain;*/
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+
+}
+.dashboard-stats .dashboard-stat-box:before {
+	content: "";
+	background-image: url('./src/images/dashboard-box-layers.png') !important;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+.dashboard-stats .dashboard-stat-box.dark:before {
+	content: "";
+	background-position: center;
+	background-image: url('./src/images/dashboard-box2-layers.png') !important;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.dashboard-stats .dashboard-stat-box h4,
+.dashboard-stats .dashboard-stat-box h5,
+.dashboard-stats .dashboard-stat-box a {
+	position: relative;
+	z-index: 1;
+}
+
+
+.apexcharts-xaxis-label {
+	font-weight: bold;
+}
+
+
+.table td {
+	font-size: 13px;
+}
+
+.badge {
+	line-height: 1em !important;
+	display: inline !important
+}
+.cash-stat { line-height: 34px; }
+.cash-stat a {
+	font-size: 12px !important;
+	font-weight: normal !important;
+	line-height: 22px !important;
+}
+/*
+.apexcharts-tooltip {
+	background: #2dcaab !important;
+	color: #fff;
+	border:none !important;
+}
+.apexcharts-tooltip-marker {
+	background: #fff !important;
+}
+*/
+
+#list_table .custom-checkbox {
+	align-self: center;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    justify-content: center;
+}
+#list_table .bottom {
+	display: inline-block;
+}
+table.dataTable td.dataTables_empty, table.dataTable th.dataTables_empty {
+    font-weight: bold;
+}
+
+
+.card-text {
+	line-height: 26px;
+}
+
+.input-group.is-invalid .invalid-feedback {
+    display: block !important;
+}
+.top {
+	padding: 10px;
+}
+.bjax-backdrop-error {
+	font-family: "Vazir-FD" !important;
+	padding-top: 2em;
+}
+
+.news_text,
+.message_text {
+	line-height: 26px;
+}
+.admin-stats .badge {
+	line-height: 11px !important;
+}
+
+
+.custom-file-label:after {
+	content: "انتخاب" !important;
+}
+
+.text-underline {
+	border-bottom: 1px dashed currentColor;
+}
+.cursor-help {
+	cursor: help;
+}
+
+.image_preview_dashboard {
+	width: 150px;
+	height: 150px;
+	background-size: cover;
+}
