@@ -10,7 +10,7 @@
     سرویس کوتاه کننده لینک حرفه ای <code>اپ لینک</code> با قابلیت کسب درآمد
     <br />
     <br />
-    <a href="https://github.com/evokelektrique/applink-php">View Screenshots</a>
+    <a href="https://github.com/evokelektrique/applink-php/screenshots">View Screenshots</a>
     ·
     <a href="https://github.com/evokelektrique/applink-php/issues">Report Bug</a>
   </p>
@@ -67,6 +67,7 @@
    ```
 2. Import `./applink.sql` into MySQL
 3. Change `./application/config/config.php` variables
+4. Change `./application/config/database.php` variables
 
 
 <!-- CONTACT -->
