@@ -10,7 +10,7 @@
     سرویس کوتاه کننده لینک حرفه ای <code>اپ لینک</code> با قابلیت کسب درآمد
     <br />
     <br />
-    <a href="https://github.com/evokelektrique/applink-php/screenshots">View Screenshots</a>
+    <a href="https://github.com/evokelektrique/applink-php/tree/main/screenshots">View Screenshots</a>
     ·
     <a href="https://github.com/evokelektrique/applink-php/issues">Report Bug</a>
   </p>
