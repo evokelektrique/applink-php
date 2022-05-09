@@ -68,7 +68,7 @@
 2. Import `./applink.sql` into MySQL
 3. Change `./application/config/config.php` variables
 4. Change `./application/config/database.php` variables
-
+5. Login with user `evoke` and password `123456789`
 
 <!-- CONTACT -->
 ## Contact
